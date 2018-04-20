@@ -1,0 +1,90 @@
+<!-- <div id="preloader" class="Fixed">
+  <div data-loader="circle-side"></div>
+</div> -->
+<!-- /Preload-->
+<div id="page">  
+  <header class="header_sticky">  
+    <a href="#menu" class="btn_mobile">
+      <div class="hamburger hamburger--spin" id="hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </a>
+    <!-- /btn_mobile-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div id="logo_home">
+            <h1><%= image_tag 'logo'%></h1>
+          </div>
+        </div>
+        <div class="col-lg-9 col-6">
+          <ul id="top_access">
+            <li><a href="login.html"><i class="pe-7s-user"></i></a></li>
+            <li><a href="register-doctor.html"><i class="pe-7s-add-user"></i></a></li>
+          </ul>
+          <nav id="menu" class="main-menu">
+            <ul style="margin-top: -2%;">
+              <li>
+                <span><%= link_to 'Home', home_index_path, class: "black"%></span>
+              </li>
+              <li>
+                <span><a href="#" class="black">Pages</a></span>
+                <ul>
+                  <li><%= link_to 'List map page', home_listpage_path%></li>
+                  <li><%= link_to 'Detail page', home_detail_path%></li>
+                  <li><%= link_to 'Blog', home_blogs_path%></li>
+                  <li><%= link_to 'Badges', home_badges_path%></li>
+                  <li><%= link_to 'Login', home_login_path%></li>
+                  <li><%= link_to 'Register Doctor', home_register_doctor_path%></li>
+                  <li><%= link_to 'Register', home_register_path%></li>
+                  <li><%= link_to 'Contacts', home_contacts_path%></li>
+                </ul>
+              </li>
+              <li>
+                <span><a href="#0"  class="black">Extra Elements</a></span>
+                <ul>
+                  <li><%= link_to 'Detail working booking', home_detail_page_working_booking_path%></li>
+                  <li><%= link_to 'Booking page', home_booking_page_path%></li>
+                  <li><%= link_to 'Confirm page', home_confirm_page_path%></li>
+                  <li><%= link_to 'Faq page', home_faq_path%></li>
+                  <li><%= link_to 'pricing tables', home_pricing_tables_path%></li>
+                  <li><%= link_to 'Working doctor register', home_working_doctor_register_path%></li>
+                  <li><%= link_to '404 page', home_page_404_path%></li>
+                </ul>
+              </li>
+              <li><span><a href="#"  class="black">Menu V2</a></span></li>
+              <li><span><a href="#" target="_blank"  class="black">Admin</a></span></li>
+            </ul>
+          </nav>
+          <!-- /main-menu -->
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </header>
+</div>
+<style type="text/css">
+  .hero_home.version_1 {
+    background: url(<%= asset_path 'hero_home_bg_1.svg'%>) center bottom no-repeat #3f4079;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .box_feat#icon_1 {
+    background: url(<%= asset_path 'icon-home-1.svg'%>) center 45px no-repeat #fff;
+  }
+  .box_feat#icon_2 {
+    background: url(<%= asset_path 'icon-home-2.svg'%>) center 45px no-repeat #fff;
+  }
+  .box_feat#icon_3 {
+    background: url(<%= asset_path 'icon-home-3.svg'%>) center 45px no-repeat #fff;
+  }
+  .black{
+    color: black;
+    font-size: .875rem;
+    font-weight: 500; 
+  }
+</style>
